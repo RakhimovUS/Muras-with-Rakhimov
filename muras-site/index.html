@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Мурас — культурное наследие Кыргызстана</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta name="theme-color" content="#211f1c">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <span class="logo-symbol">✥</span>
+
+                <div>
+                    <h2>МУРАС</h2>
+                    <p>Культурное наследие Кыргызстана</p>
+                </div>
+            </div>
+
+            <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span></button>
+
+            <nav id="siteNav">
+                <a href="index.html" class="active">Главная</a>
+                <a href="index.html#categories">Наследие</a>
+                <a href="crafts.html">Ремёсла</a>
+                <a href="music.html">Музыка</a>
+                <a href="folklore.html">Фольклор</a>
+                <a href="nomads.html">Кочевая культура</a>
+                <a href="kitchen.html">Кухня</a>
+                <a href="index.html#map">Карта</a>
+                <a href="about.html">О проекте</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-layers" aria-hidden="true">
+                <div class="hero-sky"></div>
+                <img class="hero-layer" data-speed="0.30" src="images/hero-sun.svg" alt="">
+                <img class="hero-layer hero-clouds" data-speed="0.22" src="images/hero-clouds.svg" alt="">
+                <img class="hero-layer" data-speed="0.16" src="images/hero-far.svg" alt="">
+                <img class="hero-layer" data-speed="0.10" src="images/hero-near.svg" alt="">
+                <img class="hero-layer" data-speed="0.05" src="images/hero-lake.svg" alt="">
+                <img class="hero-layer" data-speed="0" src="images/hero-ground.svg" alt="">
+            </div>
+            <div class="hero-content">
+                <p class="hero-welcome">Добро пожаловать на</p>
+                <h1>МУРАС</h1>
+                <h2>Культурное наследие Кыргызстана</h2>
+                <p class="hero-text">
+                    «Мурас» — это цифровая платформа, посвящённая сохранению,
+                    изучению и популяризации культурного наследия
+                    Кыргызской Республики.
+                </p>
+                <button>Исследовать наследие →</button>
+            </div>
+            <div class="ornament-band hero-band" aria-hidden="true"></div>
+            <p class="hero-slogan">Сохраняя прошлое —<br>вдохновляем будущее!</p>
+        </section>
+
+
+        <section class="categories container" id="categories">
+
+            <div class="section-title">
+                <h2>Категории наследия</h2>
+                <p>Откройте для себя богатство кыргызской культуры в разных её проявлениях.</p>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Поиск по наследию Кыргызстана...">
+                <button id="resetSearch">Сбросить поиск</button>
+                <p id="noResults" style="display: none;">Ничего не найдено</p>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card" data-href="monuments.html">
+                    <div class="category-media">
+                        <span>🏛️</span>
+                        <img src="images/cat-monuments.svg" alt="" onerror="this.remove()">
+                    </div>
+                    <div class="category-body">
+                        <h3>Исторические памятники</h3>
+                        <p class="category-desc">Места и объекты исторического наследия.</p>
+                        <span class="category-arrow">→</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-href="crafts.html">
+                    <div class="category-media">
+                        <span>🧵</span>
+                        <img src="images/cat-crafts.svg" alt="" onerror="this.remove()">
+                    </div>
+                    <div class="category-body">
+                        <h3>Ремёсла</h3>
+                        <p class="category-desc">Традиционные изделия и мастерство.</p>
+                        <span class="category-arrow">→</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-href="music.html">
+                    <div class="category-media">
+                        <span>🎵</span>
+                        <img src="images/cat-music.svg" alt="" onerror="this.remove()">
+                    </div>
+                    <div class="category-body">
+                        <h3>Музыка</h3>
+                        <p class="category-desc">Комуз, кюу и музыкальные традиции.</p>
+                        <span class="category-arrow">→</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-href="folklore.html">
+                    <div class="category-media">
+                        <span>📜</span>
+                        <img src="images/cat-folklore.svg" alt="" onerror="this.remove()">
+                    </div>
+                    <div class="category-body">
+                        <h3>Фольклор и эпос</h3>
+                        <p class="category-desc">«Манас» и устное народное творчество.</p>
+                        <span class="category-arrow">→</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-href="nomads.html">
+                    <div class="category-media">
+                        <span>🐎</span>
+                        <img src="images/cat-nomads.svg" alt="" onerror="this.remove()">
+                    </div>
+                    <div class="category-body">
+                        <h3>Кочевая культура</h3>
+                        <p class="category-desc">Образ жизни и традиции кочевников.</p>
+                        <span class="category-arrow">→</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-href="clothing.html">
+                    <div class="category-media">
+                        <span>👘</span>
+                        <img src="images/cat-clothing.svg" alt="" onerror="this.remove()">
+                    </div>
+                    <div class="category-body">
+                        <h3>Национальная одежда</h3>
+                        <p class="category-desc">Традиционные костюмы кыргызского народа.</p>
+                        <span class="category-arrow">→</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-href="kitchen.html">
+                    <div class="category-media">
+                        <span>🍲</span>
+                        <img src="images/cat-kitchen.svg" alt="" onerror="this.remove()">
+                    </div>
+                    <div class="category-body">
+                        <h3>Кухня</h3>
+                        <p class="category-desc">Блюда и кулинарные традиции Кыргызстана.</p>
+                        <span class="category-arrow">→</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-href="holidays.html">
+                    <div class="category-media">
+                        <span>🎉</span>
+                        <img src="images/cat-holidays.svg" alt="" onerror="this.remove()">
+                    </div>
+                    <div class="category-body">
+                        <h3>Праздники и обычаи</h3>
+                        <p class="category-desc">Праздники, обряды и народные традиции.</p>
+                        <span class="category-arrow">→</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="popular container" id="popular">
+            <div class="section-title">
+                <h2>Популярные объекты</h2>
+            </div>
+            <div class="carousel">
+                <button class="carousel-btn prev" aria-label="Назад">‹</button>
+                <div class="object-track">
+                <article class="object-card" data-href="sulaiman.html">
+                    <div class="object-media">
+                        <img src="images/obj-sulaiman.svg" alt="Гора Сулайман-Тоо (иллюстрация)">
+                        <span class="object-tag t-red">Памятник</span>
+                    </div>
+                    <div class="object-body">
+                        <h3>Сулайман-Тоо</h3>
+                        <p>Ошская область</p>
+                    </div>
+                </article>
+
+                <article class="object-card" data-href="burana.html">
+                    <div class="object-media">
+                        <img src="images/obj-burana.svg" alt="Башня Бурана (иллюстрация)">
+                        <span class="object-tag t-orange">Архитектура</span>
+                    </div>
+                    <div class="object-body">
+                        <h3>Башня Бурана</h3>
+                        <p>Чуйская область</p>
+                    </div>
+                </article>
+
+                <article class="object-card" data-href="manas-ordo.html">
+                    <div class="object-media">
+                        <img src="images/obj-manas.svg" alt="Комплекс Манас-Ордо (иллюстрация)">
+                        <span class="object-tag t-red">Эпос</span>
+                    </div>
+                    <div class="object-body">
+                        <h3>Манас-Ордо</h3>
+                        <p>Таласская область</p>
+                    </div>
+                </article>
+
+                <article class="object-card" data-href="issykkul.html">
+                    <div class="object-media">
+                        <img src="images/obj-issykkul.svg" alt="Озеро Иссык-Куль (иллюстрация)">
+                        <span class="object-tag t-green">Природный объект</span>
+                    </div>
+                    <div class="object-body">
+                        <h3>Иссык-Куль</h3>
+                        <p>Иссык-Кульская область</p>
+                    </div>
+                </article>
+
+                </div>
+                <button class="carousel-btn next" aria-label="Вперёд">›</button>
+            </div>
+        </section>
+
+        <section class="map-section" id="map">
+            <div class="container map-wrap">
+                <div class="map-text">
+                    <h2>Карта объектов наследия</h2>
+                    <p>Схема Кыргызстана с областями и главными объектами. Нажмите на красную отметку, чтобы узнать об объекте и открыть его страницу.</p>
+                </div>
+                <div class="map-box">
+                    <svg class="map" viewBox="0 0 580 310" role="img" aria-label="Схема Кыргызстана с областями и объектами наследия"><polygon points="15.0,63.0 100.0,49.0 180.0,77.0 240.0,49.0 300.0,28.0 400.0,35.0 480.0,49.0 560.0,98.0 545.0,154.0 465.0,161.0 400.0,189.0 335.0,224.0 290.0,217.0 230.0,294.0 150.0,301.0 85.0,280.0 65.0,266.0 15.0,287.0 40.0,238.0 100.0,238.0 140.0,196.0 180.0,182.0 200.0,154.0 140.0,154.0 85.0,147.0 50.0,126.0" fill="#efe3cf" stroke="#b79f7e" stroke-width="2" stroke-linejoin="round"/><ellipse cx="415.0" cy="106.0" rx="50" ry="10" fill="#4aa3c7"/><g class="pin main" tabindex="0" role="button" aria-label="Манас-Ордо, Таласская область" data-title="Манас-Ордо" data-region="Таласская область" data-tag="Эпос" data-tagclass="t-red" data-text="Комплекс памяти героя эпоса «Манас»." data-href="manas-ordo.html"><circle class="hit" cx="160.0" cy="91.0" r="16"/><circle class="pulse" cx="160.0" cy="91.0" r="7" style="animation-delay:0.0s"/><circle cx="160.0" cy="91.0" r="7"/></g><text x="160.0" y="113.0" text-anchor="middle">Таласская область</text><g class="pin main" tabindex="0" role="button" aria-label="Башня Бурана, Чуйская область" data-title="Башня Бурана" data-region="Чуйская область" data-tag="Архитектура" data-tagclass="t-orange" data-text="Минарет древнего города Баласагун." data-href="burana.html"><circle class="hit" cx="295.0" cy="63.0" r="16"/><circle class="pulse" cx="295.0" cy="63.0" r="7" style="animation-delay:0.6s"/><circle cx="295.0" cy="63.0" r="7"/></g><text x="295.0" y="85.0" text-anchor="middle">Чуйская область</text><g class="pin main" tabindex="0" role="button" aria-label="Иссык-Куль, Иссык-Кульская область" data-title="Иссык-Куль" data-region="Иссык-Кульская область" data-tag="Природный объект" data-tagclass="t-green" data-text="Горное озеро, которое не замерзает зимой." data-href="issykkul.html"><circle class="hit" cx="415.0" cy="84.0" r="16"/><circle class="pulse" cx="415.0" cy="84.0" r="7" style="animation-delay:1.2s"/><circle cx="415.0" cy="84.0" r="7"/></g><text x="415.0" y="68.0" text-anchor="middle">Иссык-Кульская область</text><g class="pin"><title>Нарынская область</title><circle cx="345.0" cy="154.0" r="4"/></g><text x="345.0" y="168.0" text-anchor="middle">Нарынская область</text><g class="pin"><title>Джалал-Абадская область</title><circle cx="175.0" cy="161.0" r="4"/></g><text x="175.0" y="175.0" text-anchor="middle">Джалал-Абадская область</text><g class="pin main" tabindex="0" role="button" aria-label="Сулайман-Тоо, Ошская область" data-title="Сулайман-Тоо" data-region="Ошская область" data-tag="Памятник" data-tagclass="t-red" data-text="Священная гора в центре Оша, объект ЮНЕСКО." data-href="sulaiman.html"><circle class="hit" cx="210.0" cy="224.0" r="16"/><circle class="pulse" cx="210.0" cy="224.0" r="7" style="animation-delay:1.8s"/><circle cx="210.0" cy="224.0" r="7"/></g><text x="210.0" y="246.0" text-anchor="middle">Ошская область</text><g class="pin"><title>Баткенская область</title><circle cx="85.0" cy="252.0" r="4"/></g><text x="85.0" y="266.0" text-anchor="middle">Баткенская область</text></svg>
+                    <div class="map-popup" id="mapPopup" role="dialog" aria-label="Объект наследия" hidden>
+                        <button class="map-popup-close" type="button" aria-label="Закрыть">×</button>
+                        <span class="object-tag" id="mpTag"></span>
+                        <h3 id="mpTitle"></h3>
+                        <p class="mp-region" id="mpRegion"></p>
+                        <p id="mpText"></p>
+                        <a id="mpLink" href="index.html#map">Подробнее →</a>
+                    </div>
+                </div>
+                <nav class="quick">
+                    <h3>Быстрый доступ</h3>
+                    <a href="monuments.html">🏛️ Исторические памятники</a>
+                    <a href="music.html">🎵 Музыка</a>
+                    <a href="crafts.html">🧵 Ремёсла</a>
+                    <a href="clothing.html">👘 Национальная одежда</a>
+                    <a href="folklore.html">📜 Фольклор и эпос</a>
+                    <a href="nomads.html">🐎 Кочевая культура</a>
+                    <a href="kitchen.html">🍲 Кухня</a>
+                    <a href="holidays.html">🎉 Праздники и обычаи</a>
+                </nav>
+            </div>
+        </section>
+
+        <section class="strip">
+            <div class="container strip-wrap">
+                <blockquote class="strip-quote">
+                    <p>Культура — это душа народа, его история, традиции и ценности.</p>
+                </blockquote>
+                <ul class="stats">
+                    <li><strong>3</strong><span>струны у комуза</span></li>
+                    <li><strong>4</strong><span>сезонных пастбища кочевников</span></li>
+                    <li><strong>7</strong><span>областей Кыргызстана</span></li>
+                    <li><strong>3</strong><span>части эпоса: «Манас», «Семетей», «Сейтек»</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="news container" id="news">
+            <div class="section-title">
+                <h2>Новое на сайте</h2>
+                <p>Недавно добавленные разделы.</p>
+            </div>
+            <div class="news-grid">
+                <a class="news-card" href="nomads.html">
+                    <div class="news-media"><img src="images/cat-nomads.svg" alt=""></div>
+                    <div class="news-body">
+                        <span class="news-tag n-nomads">Кочевая культура</span>
+                        <h3>Джайлоо, кок-бору и беркутчи</h3>
+                    </div>
+                </a>
+
+                <a class="news-card" href="kitchen.html">
+                    <div class="news-media"><img src="images/cat-kitchen.svg" alt=""></div>
+                    <div class="news-body">
+                        <span class="news-tag n-kitchen">Кухня</span>
+                        <h3>Бешбармак, боорсоки и кымыз</h3>
+                    </div>
+                </a>
+
+                <a class="news-card" href="crafts.html">
+                    <div class="news-media"><img src="images/cat-crafts.svg" alt=""></div>
+                    <div class="news-body">
+                        <span class="news-tag n-crafts">Ремёсла</span>
+                        <h3>Ширдак, ала-кийиз и юрта</h3>
+                    </div>
+                </a>
+
+                <a class="news-card" href="folklore.html">
+                    <div class="news-media"><img src="images/cat-folklore.svg" alt=""></div>
+                    <div class="news-body">
+                        <span class="news-tag n-folklore">Фольклор и эпос</span>
+                        <h3>«Манас», манасчи и акыны</h3>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+
+            <div class="container">
+
+                <p class="section-label">
+                    НАСЛЕДИЕ ПОКОЛЕНИЙ
+                </p>
+
+                <h2>
+                    Культура, которую мы сохраняем
+                </h2>
+
+                <p>
+                    Культурное наследие Кыргызстана формировалось
+                    на протяжении многих веков. Оно объединяет
+                    историю, традиции, искусство, музыку, ремёсла
+                    и уникальное наследие кочевой цивилизации.
+                </p>
+
+                <p><a href="about.html" class="about-more">Подробнее о проекте →</a></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-logo">
+                <h2>МУРАС</h2>
+                <p>Культурное наследие Кыргызстана</p>
+                <p class="footer-note">Сохраняем культурное наследие для будущих поколений.</p>
+                <p class="footer-note"><a class="footer-mail" href="mailto:kyrgyz.manas.kg@gmail.com">kyrgyz.manas.kg@gmail.com</a></p>
+                <p class="footer-note"><a class="footer-mail" href="https://www.instagram.com/skr0mn1y_006" target="_blank" rel="noopener">Instagram: @skr0mn1y_006</a></p>
+            </div>
+            <div class="footer-links">
+                <h4>Разделы</h4>
+                <div class="footer-cols">
+                    <a href="index.html">Главная</a>
+                    <a href="monuments.html">Исторические памятники</a>
+                    <a href="music.html">Музыка</a>
+                    <a href="crafts.html">Ремёсла</a>
+                    <a href="clothing.html">Национальная одежда</a>
+                    <a href="folklore.html">Фольклор</a>
+                    <a href="nomads.html">Кочевая культура</a>
+                    <a href="kitchen.html">Кухня</a>
+                    <a href="holidays.html">Праздники и обычаи</a>
+                    <a href="index.html#map">Карта</a>
+                    <a href="about.html">О проекте</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="copyright">© 2026 Мурас. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="lang.js"></script>
+
+</body>
+
+</html>
